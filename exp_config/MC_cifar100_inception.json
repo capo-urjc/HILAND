@@ -1,0 +1,28 @@
+{
+  "gpu_id": 0,
+  "seed": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "dataset_name": "CIFAR100",
+  "dataset_path": "exp_datasets",
+  "download": true,
+  "train_batch_size": 200,
+  "test_batch_size": 200,
+  "output_folder_path": "exp_out/MC_cifar100_inception",
+  "output_folder_name": "",
+  "epochs": 9999,
+  "learning_rate": 0.01,
+  "momentum": 0.9,
+  "max_iterations": 8550,
+  "base_iterations": 200,
+  "per_class_iterations": 150,
+  "resampling": {
+    "enabled": false,
+    "samples": 2000
+  },
+  "equalize_binary_class_data": false,
+  "backend_name": "Inception",
+  "network_type": "MC",
+  "fc_architecture": {
+    "test_fusion_enabled": true,
+    "hidden_layers_size": []
+  }
+}

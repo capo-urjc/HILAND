@@ -1,0 +1,50 @@
+{
+    "gpu_id": 0,
+    "seed": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "dataset_name": "FashionMNIST",
+    "dataset_path": "exp_datasets",
+    "download": true,
+    "train_batch_size": 200,
+    "test_batch_size": 200,
+    "output_folder_path": "exp_out/BE_fashion_vgg_th_05",
+    "output_folder_name": "",
+    "epochs": 9999,
+    "learning_rate": 0.01,
+    "momentum": 0.9,
+    "max_iterations": 9999,
+    "base_iterations": 200,
+    "per_class_iterations": 150,
+    "threshold": "default",
+    "resampling": {
+        "enabled": false,
+        "samples": 2000,
+        "current_samples": 6000,
+        "resample_class_c": false,
+        "fixed_r_enabled": false,
+        "fixed_r": 0.1
+    },
+    "convex_hull": {
+        "enabled": false,
+        "fixed_r_enabled": false,
+        "fixed_r": 0.1,
+        "variable_r_enabled": false,
+        "variable_r_inverse_enabled": false,
+        "other_class_equalization": false,
+        "other_class_size": 5000
+    },
+    "equalize_binary_class_data": false,
+    "binary_loss": {
+        "reduction": "mean",
+        "use_with_logits": false,
+        "use_rescaling": false,
+        "rescaling_beta": 0.0001
+    },
+    "backend_name": "VGG16",
+    "network_type": "BEB",
+    "fc_architecture": {
+        "test_fusion_enabled": true,
+        "hidden_layers_size": [],
+        "dropout": false,
+        "dropout_prob": 0.0
+    }
+}
