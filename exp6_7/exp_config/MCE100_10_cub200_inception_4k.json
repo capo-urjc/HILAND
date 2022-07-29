@@ -1,0 +1,60 @@
+{
+  "gpu_id": 0,
+  "seed": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "dataset_name": "CUB200",
+  "dataset_path": "exp_datasets",
+  "download": true,
+  "train_batch_size": 200,
+  "test_batch_size": 200,
+  "output_folder_path": "exp_out/MCE100_10_cub200_inception_4k",
+  "output_folder_name": "",
+  "epochs": 9999,
+  "learning_rate": 0.01,
+  "learning_rate_decay": {
+    "skip_first": true,
+    "step_enable": true,
+    "steps": [
+      55
+    ],
+    "factor": 0.1
+  },
+  "momentum": 0.9,
+  "max_iterations": 9999,
+  "base_iterations": 220,
+  "first_iterations": 350,
+  "per_class_iterations": 0,
+  "num_classes_per_group": [100, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+  "resampling": {
+    "enabled": true,
+    "samples": 4000,
+    "current_samples": "all",
+    "resample_class_c": false,
+    "fixed_r_enabled": false,
+    "fixed_r": 0.1
+  },
+  "convex_hull": {
+    "enabled": false,
+    "fixed_r_enabled": false,
+    "fixed_r": 0.1,
+    "variable_r_enabled": false,
+    "variable_r_inverse_enabled": false,
+    "other_class_equalization": false,
+    "other_class_size": 5000
+  },
+  "equalize_binary_class_data": false,
+  "binary_loss": {
+    "reduction": "mean",
+    "use_with_logits": false,
+    "use_rescaling": false,
+    "rescaling_beta": 0.0001
+  },
+  "backend_name": "Inception",
+  "network_type": "MCE",
+  "fc_architecture": {
+    "unfreeze_first_task": true,
+    "test_fusion_enabled": true,
+    "hidden_layers_size": [],
+    "dropout": false,
+    "dropout_prob": 0.0
+  }
+}

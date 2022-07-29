@@ -47,7 +47,7 @@ Our experiments can be reproduced in any operating system that supports the foll
       `pip install torch==1.7.1+cpu torchvision==0.8.2+cpu torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html`
 
 ## Usage
-To run our experiments we provide 12 configuration files in [exp_config](exp_config).
+To run our experiments we provide 20 configuration files in [exp1_5/exp_config](exp1_5/exp_config) and [exp6_7/exp_config](exp6_7/exp_config).
 To run our experiments use the following commands:
 
 1. From a terminal window in the project root directory, activate the virtual environment created during the installation process:
@@ -69,7 +69,7 @@ To run our experiments use the following commands:
       
       `run_experiments.bat`
 
-3. Check the results in the newly crated CSV file at `exp_out/results.csv`.
+3. Check the results in the CSV files in the newly created  `exp_out` folder.
 
 
 
